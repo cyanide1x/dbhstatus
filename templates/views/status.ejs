@@ -1,0 +1,371 @@
+<%- include("../partials/header.ejs", { Title: `Status`, Page: `status` }) %>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="10" />
+        <title>Status</title>
+    </head>
+
+    <body>
+
+        <div class="noderow">
+            <span class="node">
+                <strong>Node 1 Stats</strong>
+                <% if(nodeData.get(`node1`)) { %>
+                    <div class="nodeinfo">
+                        <strong style="color: green;">Online</strong>
+                        <br>
+                        <br>
+                        <strong>CPU</strong>
+                        <br>
+                        Usage >> <%- nodeData.fetch("node1").cpu %>%
+                            <br>
+                            Load >> <%- nodeData.fetch("node1").cpuload %>
+                                <br>
+                                <strong>RAM</strong>
+                                <br>
+                                Usage >> <%- prettybytes(nodeData.fetch("node1").memused * 1000) %>
+                                    <br>
+                                    Total >> <%- prettybytes(nodeData.fetch("node1").memtotal * 1000) %>
+                                        <br>
+                                        <strong>Disk</strong>
+                                        <br>
+                                        Usage >> <%- prettybytes(nodeData.fetch("node1").diskused * 1000000) %>
+                                            <br>
+                                            Total >> <%- prettybytes(nodeData.fetch("node1").disktotal * 1000000) %>
+                                                <br>
+                                                <strong>Last Checked</strong>
+                                                <br>
+                                                Date >> Now lol
+                    </div>
+                    <% } else { %>
+                        <div class="nodeinfo">
+                            <strong style="color: RED;">Offline</strong>
+                        </div>
+                        <% } %>
+            </span>
+            <span class="node">
+                <strong>Node 2 Stats</strong>
+                <% if(nodeData.get(`node2`)) { %>
+                    <div class="nodeinfo">
+                        <strong style="color: green;">Online</strong>
+                        <br>
+                        <br>
+                        <strong>CPU</strong>
+                        <br>
+                        Usage >> <%- nodeData.fetch("node2").cpu %>%
+                            <br>
+                            Load >> <%- nodeData.fetch("node2").cpuload %>
+                                <br>
+                                <strong>RAM</strong>
+                                <br>
+                                Usage >> <%- prettybytes(nodeData.fetch("node2").memused * 1000) %>
+                                    <br>
+                                    Total >> <%- prettybytes(nodeData.fetch("node2").memtotal * 1000) %>
+                                        <br>
+                                        <strong>Disk</strong>
+                                        <br>
+                                        Usage >> <%- prettybytes(nodeData.fetch("node2").diskused * 1000000) %>
+                                            <br>
+                                            Total >> <%- prettybytes(nodeData.fetch("node2").disktotal * 1000000) %>
+                                                <br>
+                                                <strong>Last Checked</strong>
+                                                <br>
+                                                Date >> Now lol
+                    </div>
+                    <% } else { %>
+                        <div class="nodeinfo">
+                            <strong style="color: RED;">Offline</strong>
+                        </div>
+                        <% } %>
+            </span>
+            <span class="node">
+                <strong>Node 3 Stats</strong>
+                <% if(nodeData.get(`node3`)) { %>
+                    <div class="nodeinfo">
+                        <strong style="color: green;">Online</strong>
+                        <br>
+                        <br>
+                        <strong>CPU</strong>
+                        <br>
+                        Usage >> <%- nodeData.fetch("node3").cpu %>%
+                            <br>
+                            Load >> <%- nodeData.fetch("node3").cpuload %>
+                                <br>
+                                <strong>RAM</strong>
+                                <br>
+                                Usage >> <%- prettybytes(nodeData.fetch("node3").memused * 1000) %>
+                                    <br>
+                                    Total >> <%- prettybytes(nodeData.fetch("node3").memtotal * 1000) %>
+                                        <br>
+                                        <strong>Disk</strong>
+                                        <br>
+                                        Usage >> <%- prettybytes(nodeData.fetch("node3").diskused * 1000000) %>
+                                            <br>
+                                            Total >> <%- prettybytes(nodeData.fetch("node3").disktotal * 1000000) %>
+                                                <br>
+                                                <strong>Last Checked</strong>
+                                                <br>
+                                                Date >> Now lol
+                    </div>
+                    <% } else { %>
+                        <div class="nodeinfo">
+                            <strong style="color: RED;">Offline</strong>
+                        </div>
+                        <% } %>
+            </span>
+        </div>
+
+        <div class="noderow">
+            <span class="node">
+                <strong>Node 4 Stats</strong>
+                <% if(nodeData.get(`node4`)) { %>
+                    <div class="nodeinfo">
+                        <strong style="color: green;">Online</strong>
+                        <br>
+                        <br>
+                        <strong>CPU</strong>
+                        <br>
+                        Usage >> <%- nodeData.fetch("node4").cpu %>%
+                            <br>
+                            Load >> <%- nodeData.fetch("node4").cpuload %>
+                                <br>
+                                <strong>RAM</strong>
+                                <br>
+                                Usage >> <%- prettybytes(nodeData.fetch("node4").memused * 1000) %>
+                                    <br>
+                                    Total >> <%- prettybytes(nodeData.fetch("node4").memtotal * 1000) %>
+                                        <br>
+                                        <strong>Disk</strong>
+                                        <br>
+                                        Usage >> <%- prettybytes(nodeData.fetch("node4").diskused * 1000000) %>
+                                            <br>
+                                            Total >> <%- prettybytes(nodeData.fetch("node4").disktotal * 1000000) %>
+                                                <br>
+                                                <strong>Last Checked</strong>
+                                                <br>
+                                                Date >> Now lol
+                    </div>
+                    <% } else { %>
+                        <div class="nodeinfo">
+                            <strong style="color: RED;">Offline</strong>
+                        </div>
+                        <% } %>
+            </span>
+            <span class="node">
+                <strong>Node 5 Stats</strong>
+                <% if(nodeData.get(`node5`)) { %>
+                    <div class="nodeinfo">
+                        <strong style="color: green;">Online</strong>
+                        <br>
+                        <br>
+                        <strong>CPU</strong>
+                        <br>
+                        Usage >> <%- nodeData.fetch("node5").cpu %>%
+                            <br>
+                            Load >> <%- nodeData.fetch("node5").cpuload %>
+                                <br>
+                                <strong>RAM</strong>
+                                <br>
+                                Usage >> <%- prettybytes(nodeData.fetch("node5").memused * 1000) %>
+                                    <br>
+                                    Total >> <%- prettybytes(nodeData.fetch("node5").memtotal * 1000) %>
+                                        <br>
+                                        <strong>Disk</strong>
+                                        <br>
+                                        Usage >> <%- prettybytes(nodeData.fetch("node5").diskused * 1000000) %>
+                                            <br>
+                                            Total >> <%- prettybytes(nodeData.fetch("node5").disktotal * 1000000) %>
+                                                <br>
+                                                <strong>Last Checked</strong>
+                                                <br>
+                                                Date >> Now lol
+                    </div>
+                    <% } else { %>
+                        <div class="nodeinfo">
+                            <strong style="color: RED;">Offline</strong>
+                        </div>
+                        <% } %>
+            </span>
+            <span class="node">
+                <strong>Node 8 Stats</strong>
+                <% if(nodeData.get(`node8`)) { %>
+                    <div class="nodeinfo">
+                        <strong style="color: green;">Online</strong>
+                        <br>
+                        <br>
+                        <strong>CPU</strong>
+                        <br>
+                        Usage >> <%- nodeData.fetch("node8").cpu %>%
+                            <br>
+                            Load >> <%- nodeData.fetch("node8").cpuload %>
+                                <br>
+                                <strong>RAM</strong>
+                                <br>
+                                Usage >> <%- prettybytes(nodeData.fetch("node8").memused * 1000) %>
+                                    <br>
+                                    Total >> <%- prettybytes(nodeData.fetch("node8").memtotal * 1000) %>
+                                        <br>
+                                        <strong>Disk</strong>
+                                        <br>
+                                        Usage >> <%- prettybytes(nodeData.fetch("node8").diskused * 1000000) %>
+                                            <br>
+                                            Total >> <%- prettybytes(nodeData.fetch("node8").disktotal * 1000000) %>
+                                                <br>
+                                                <strong>Last Checked</strong>
+                                                <br>
+                                                Date >> Now lol
+                    </div>
+                    <% } else { %>
+                        <div class="nodeinfo">
+                            <strong style="color: RED;">Offline</strong>
+                        </div>
+                        <% } %>
+            </span>
+        </div>
+
+        <div class="noderow">
+            <span class="node">
+                <strong>Dono 01 Stats</strong>
+                <% if(nodeData.get(`dono01`)) { %>
+                    <div class="nodeinfo">
+                        <strong style="color: green;">Online</strong>
+                        <br>
+                        <br>
+                        <strong>CPU</strong>
+                        <br>
+                        Usage >> <%- nodeData.fetch("dono01").cpu %>%
+                            <br>
+                            Load >> <%- nodeData.fetch("dono01").cpuload %>
+                                <br>
+                                <strong>RAM</strong>
+                                <br>
+                                Usage >> <%- prettybytes(nodeData.fetch("dono01").memused * 1000) %>
+                                    <br>
+                                    Total >> <%- prettybytes(nodeData.fetch("dono01").memtotal * 1000) %>
+                                        <br>
+                                        <strong>Disk</strong>
+                                        <br>
+                                        Usage >> <%- prettybytes(nodeData.fetch("dono01").diskused * 1000000) %>
+                                            <br>
+                                            Total >> <%- prettybytes(nodeData.fetch("dono01").disktotal * 1000000) %>
+                                                <br>
+                                                <strong>Last Checked</strong>
+                                                <br>
+                                                Date >> Now lol
+                    </div>
+                    <% } else { %>
+                        <div class="nodeinfo">
+                            <strong style="color: RED;">Offline</strong>
+                        </div>
+                        <% } %>
+            </span>
+            <span class="node">
+                <strong>Dono 02 Stats</strong>
+                <% if(nodeData.get(`dono02`)) { %>
+                    <div class="nodeinfo">
+                        <strong style="color: green;">Online</strong>
+                        <br>
+                        <br>
+                        <strong>CPU</strong>
+                        <br>
+                        Usage >> <%- nodeData.fetch("dono02").cpu %>%
+                            <br>
+                            Load >> <%- nodeData.fetch("dono02").cpuload %>
+                                <br>
+                                <strong>RAM</strong>
+                                <br>
+                                Usage >> <%- prettybytes(nodeData.fetch("dono02").memused * 1000) %>
+                                    <br>
+                                    Total >> <%- prettybytes(nodeData.fetch("dono02").memtotal * 1000) %>
+                                        <br>
+                                        <strong>Disk</strong>
+                                        <br>
+                                        Usage >> <%- prettybytes(nodeData.fetch("dono02").diskused * 1000000) %>
+                                            <br>
+                                            Total >> <%- prettybytes(nodeData.fetch("dono02").disktotal * 1000000) %>
+                                                <br>
+                                                <strong>Last Checked</strong>
+                                                <br>
+                                                Date >> Now lol
+                    </div>
+                    <% } else { %>
+                        <div class="nodeinfo">
+                            <strong style="color: RED;">Offline</strong>
+                        </div>
+                        <% } %>
+            </span>
+            <span class="node">
+                <strong>Dono 03 Stats</strong>
+                <% if(nodeData.get(`dono03`)) { %>
+                    <div class="nodeinfo">
+                        <strong style="color: green;">Online</strong>
+                        <br>
+                        <br>
+                        <strong>CPU</strong>
+                        <br>
+                        Usage >> <%- nodeData.fetch("dono03").cpu %>%
+                            <br>
+                            Load >> <%- nodeData.fetch("dono03").cpuload %>
+                                <br>
+                                <strong>RAM</strong>
+                                <br>
+                                Usage >> <%- prettybytes(nodeData.fetch("dono03").memused * 1000) %>
+                                    <br>
+                                    Total >> <%- prettybytes(nodeData.fetch("dono03").memtotal * 1000) %>
+                                        <br>
+                                        <strong>Disk</strong>
+                                        <br>
+                                        Usage >> <%- prettybytes(nodeData.fetch("dono03").diskused * 1000000) %>
+                                            <br>
+                                            Total >> <%- prettybytes(nodeData.fetch("dono03").disktotal * 1000000) %>
+                                                <br>
+                                                <strong>Last Checked</strong>
+                                                <br>
+                                                Date >> Now lol
+                    </div>
+                    <% } else { %>
+                        <div class="nodeinfo">
+                            <strong style="color: RED;">Offline</strong>
+                        </div>
+                        <% } %>
+            </span>
+        </div>
+
+        <!-- Styling -->
+        <style>
+            body {
+                background-color: #22272e;
+            }
+
+            .noderow {
+                color: white;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .noderow .node {
+                font-size: 18pt;
+                position: relative;
+                padding-right: 75px;
+                padding-left: 75px;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .noderow .node .nodeinfo {
+                font-size: 14pt;
+                padding: 0;
+            }
+        </style>
+
+    </body>
+
+    </html>

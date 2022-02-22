@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "axios": "^0.26.0",
+    "ejs": "^3.1.6",
+    "fastify": "^3.27.2",
+    "humanize-duration": "^3.27.1",
+    "point-of-view": "^5.1.0",
+    "pretty-bytes": "^6.0.0",
+    "quick.db": "^7.1.3"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "dbhstatus",
+  "description": "A community made status page for DanBot Hosting ( DBH )",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyanide1x/dbhstatus.git"
+  },
+  "author": "cyanide1x",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cyanide1x/dbhstatus/issues"
+  },
+  "homepage": "https://github.com/cyanide1x/dbhstatus#readme"
+}

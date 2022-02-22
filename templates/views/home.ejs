@@ -1,0 +1,71 @@
+<%- include("../partials/header.ejs", { Title: `Home`, Page: `home` }) %>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+    </head>
+
+    <body>
+
+        <div class="title">
+            <img
+                src="https://cdn.discordapp.com/avatars/640161047671603205/718aa5783508125a02e3b244a1bf096e.webp?size=80">
+            <strong>Home</strong>
+        </div>
+
+        <div class="subtitle">
+            <p>DBH Status is a community made status page for DanBot Hosting.</p>
+            <p><a href="/status"><strong>Click me to view status!</strong></a></p>
+        </div>
+
+        <!-- Styling -->
+        <style>
+            body {
+                background-color: #22272e;
+            }
+
+            .title {
+                display: flex;
+                flex-direction: column;
+                padding: 10vh;
+                padding-bottom: 4vh;
+                font-size: 10vh;
+                text-align: center;
+                color: #fff;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .title img {
+                height: 90px;
+                width: 90px;
+                margin-bottom: 1rem;
+                border-radius: 50%;
+            }
+
+            .subtitle {
+                font-size: 5vh;
+                text-align: center;
+                color: #fff;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .subtitle a {
+                text-decoration: none;
+                color: #fff;
+                transition: 0.5s;
+            }
+            
+            .subtitle a:hover {
+                color: rgb(0, 81, 255);
+            }
+        </style>
+
+    </body>
+
+    </html>
